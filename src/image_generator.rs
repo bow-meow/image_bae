@@ -162,9 +162,7 @@ fn pad_file_size(img_file: &mut File, target_filesize_mb: u32){
     let current_size_kb = img_file.metadata().unwrap().len() as u32 / 1024;
 
     let padding_size_kb = target_filesize_mb * 1024 - current_size_kb;
-
-    println!("{}", padding_size_kb);
-
+    
     let padding_bytes = vec![0u8; (padding_size_kb * 1024) as usize];
     img_file.write_all(&padding_bytes).unwrap();
 }
