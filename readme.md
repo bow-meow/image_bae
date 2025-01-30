@@ -116,6 +116,8 @@ The number of times the operation repeats.
 ```bash
 image_bae.exe --text "[1..100]" --color rand --font rand --textc rand --format rand
 
+'''
+
 ## Roadmap
 
 - Allow size parameters like `500xrand`, `randxrand`, or `randx500`.
