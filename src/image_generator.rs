@@ -106,7 +106,6 @@ impl ImageGenerator{
             let background_r = instruction.image_color[0];
             let background_g = instruction.image_color[1];
             let background_b = instruction.image_color[2];
-            //let a = instruction.image_color[3];
     
             let mut foreground_r : u8 = 0;
             let mut foreground_g : u8 = 0;
